@@ -1,9 +1,3 @@
-# Project
-# Names : Ola Bannan
-# ID : 316230010
-# E-MAILS: ola.bannan@hotmail.com
-
-
 # import relevant libraries
 from tkinter import *
 from tkinter import messagebox as msg
@@ -11,7 +5,6 @@ from tkinter.ttk import Combobox
 import csv
 from tkinter import filedialog
 from datetime import datetime
-# import relevant libraries
 from urllib.request import urlopen
 from urllib.parse import quote
 import requests
@@ -32,8 +25,8 @@ baseUrl = 'https://fhir.loinc.org/CodeSystem/$lookup?system=http://loinc.org&cod
 # define function to access API using valid credentials
 def getLOINCbyCode(LOINC):
     url = baseUrl + LOINC
-    username = "olabannan"
-    password = "OlaBan5715?"
+    username = "user-name in LOINC"
+    password = "password"
 
     r = requests.get(url, auth=(username, password))
     page = r.content
